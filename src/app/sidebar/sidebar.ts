@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { bootstrapArrowLeftRight, bootstrapBank2, bootstrapHouse } from '@ng-icons/bootstrap-icons';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 import { matGroups2Sharp } from '@ng-icons/material-icons/sharp';
 import { matAccountBalanceWalletRound } from '@ng-icons/material-icons/round';
 
@@ -9,7 +9,8 @@ import { matAccountBalanceWalletRound } from '@ng-icons/material-icons/round';
   selector: 'app-sidebar',
   imports: [
     NgIcon,
-    RouterLink
+    RouterLink,
+    RouterLinkActive
 ],
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.css',
