@@ -1,6 +1,6 @@
 <div class="w-full h-full p-8 bg-[#18182a]">
     <!-- Presentation de l'application et logo -->
-  <div class="flex items-center gap-5">
+  <div class="flex items-center gap-5 mb-10">
     
     <!-- Logo -->
     <div class="flex items-center justify-center
@@ -24,7 +24,7 @@
                  bg-clip-text text-transparent">
         Bancofiori
       </h1>
-      <p class="text-sm text-gray-400 tracking-wide">
+      <p class="text-[12px] text-gray-400 tracking-wide">
         Gestion bancaire
       </p>
     </div>
@@ -32,7 +32,14 @@
   </div>
 
   <!-- Les boutons de navigation -->
-   <nav>
-    <a routerLink="/">Tableau de bord</a>
+   <nav class="text-white flex flex-col gap-2 justify-between">
+    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-xl flex items-center gap-2" routerLink="/">
+        <ng-icon name="bootstrapHouse" size="22"/>
+        Tableau de bord
+    </a>
+    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-xl flex items-center gap-2" routerLink="/">
+        <ng-icon name="matGroups2Sharp" size="22"/>
+        Clients
+    </a>
    </nav>
 </div>
