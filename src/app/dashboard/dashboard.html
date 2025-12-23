@@ -1,3 +1,99 @@
-<div class="h-full w-full bg-linear-to-b from-[#1a1a2e] to-[#090912]">
-    Section du dashboard
+<div class="h-full w-full dark:text-white bg-linear-to-b p-6 from-[#1a1a2e] to-[#090912]">
+    <h1 class="font-bold text-4xl mt-5 mx-6 mb-1">Tableau de bord</h1>
+    <p class="text-10 text-gray-300 mx-6">Vue d'ensemble des activités bancaires</p>
+
+
+    <!-- Cartes pour les données de la base -->
+    <div class="w-full flex gap-3">
+
+        <!-- Carte clients -->
+        <div class="rounded-3xl h-50 w-90 my-5 border dark:border-gray-800 bg-linear-to-tr to-gray-500/10 shadow-gray-600 shadow-sm hover:-translate-0.5 transition-all duration-200 hover:shadow-lg  mx-2">
+            <div class="flex my-5 relative mx-8 justify-between">
+                <!-- Icone clients -->
+                 <div class="bg-[#32c267] rounded-2xl flex justify-center items-center p-3">
+                    <ng-icon 
+                        size="32" 
+                        name="matGroups2Sharp"
+                    />
+                 </div>
+                 <p class="bg-green-700/30 absolute  bottom-5 right-0 p-3 rounded-2xl h-5 flex justify-center items-center text-[14px] text-green-500">Clients</p>
+                
+            </div>
+            <div class="ml-11 flex flex-col">
+                <span class="font-extrabold text-4xl">3</span>
+                <p class="mt-2 text-gray-400 text-sm">Clients enregistrés</p>
+            </div>
+        </div>
+
+        <!-- Carte comptes -->
+        <div class="rounded-3xl h-50 w-90 my-5 border dark:border-gray-800 bg-linear-to-tr to-gray-500/10 shadow-gray-600 shadow-sm hover:-translate-0.5 transition-all duration-200 hover:shadow-lg  mx-2">
+            <div class="flex my-5 relative mx-8 justify-between">
+                <!-- Icone comptes -->
+                 <div class="bg-linear-to-br from-[#e067f0] to-[#c532d9] rounded-2xl flex justify-center items-center p-3">
+                    <ng-icon 
+                        size="32" 
+                        name="matAccountBalanceWalletRound"
+                    />
+                 </div>
+                 <p 
+                    class="bg-pink-400/10 absolute  bottom-5 right-0 p-3 rounded-2xl h-5 flex justify-center items-center text-[14px] text-pink-400"
+                    >
+                    Comptes</p>
+                
+            </div>
+            <div class="ml-11 flex flex-col">
+                <span class="font-extrabold text-4xl">3</span>
+                <p class="mt-2 text-gray-400 text-sm">comptes actifs</p>
+            </div>
+        </div>
+
+
+        <!-- Carte pour les comptes épargnes -->
+        <div class="rounded-3xl h-50 w-90 my-5 border dark:border-gray-800 bg-linear-to-tr to-gray-500/10 shadow-gray-600 shadow-sm hover:-translate-0.5 transition-all duration-200 hover:shadow-lg  mx-2">
+            <div class="flex my-5 relative mx-8 justify-between">
+                <!-- Icone comptes eparnes-->
+                 <div class="bg-green-400/50 rounded-2xl flex justify-center items-center p-3">
+                    <ng-icon 
+                        size="32" 
+                        name="matAccountBalanceWalletRound"
+                    />
+                 </div>
+                 <p 
+                    class="bg-pink-400/10 absolute  bottom-5 right-0 p-3 rounded-2xl h-5 flex justify-center items-center text-[14px] text-pink-400"
+                    >
+                    Comptes</p>
+                
+            </div>
+            <div class="ml-11 flex flex-col">
+                <span class="font-extrabold text-4xl">3</span>
+                <p class="mt-2 text-gray-400 text-sm">comptes épargnes</p>
+            </div>
+        </div>
+
+
+        <div class="rounded-3xl h-50 w-90 my-5 border dark:border-gray-800 bg-linear-to-tr to-gray-500/10 shadow-gray-600 shadow-sm hover:-translate-0.5 transition-all duration-200 hover:shadow-lg  mx-2">
+            <div class="flex my-5 relative mx-8 justify-between">
+                <!-- Icone comptes -->
+                 <div class="bg-linear-to-br from-[#c676e8] to-[#d63689] rounded-2xl flex justify-center items-center p-3">
+                    <ng-icon 
+                        size="32" 
+                        name="bootstrapCreditCardFill"
+                    />
+                 </div>
+                 <p 
+                    class="bg-pink-400/10 absolute  bottom-5 right-0 p-3 rounded-2xl h-5 flex justify-center items-center text-[14px] text-pink-400"
+                    >
+                    Comptes</p>
+                
+            </div>
+            <div class="ml-11 flex flex-col">
+                <span class="font-extrabold text-4xl">3</span>
+                <p class="mt-2 text-gray-400 text-sm">comptes courants</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    
 </div>
