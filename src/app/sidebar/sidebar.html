@@ -1,69 +1,87 @@
-<div class="w-full h-full p-8 bg-[#18182a]">
+<div class="w-full h-full p-8 bg-[#18182a] text-white flex flex-col ">
     <!-- Presentation de l'application et logo -->
-  <div class="flex items-center gap-5 mb-10">
-    
-    <!-- Logo -->
-    <div class="flex items-center justify-center
-                w-12 h-12 text-white
-                rounded-2xl
-                bg-linear-to-br from-[#1fbf61] to-[#158f42]
-                shadow-lg shadow-[#158f42]/30
-                hover:shadow-2xl hover:shadow-[#158f42]
-                hover:-translate-y-0.5">
-      <ng-icon
-        name="bootstrapBank2"
-        size="22"
-        class="text-white"
-      />
-    </div>
+    <div class="flex items-center gap-5 mb-10">
+      
+      <!-- Logo -->
+      <div class="flex items-center justify-center
+                  w-12 h-12 text-white
+                  rounded-2xl
+                  bg-linear-to-br from-[#1fbf61] to-[#158f42]
+                  shadow-lg shadow-[#158f42]/30
+                  hover:shadow-2xl hover:shadow-[#158f42]
+                  hover:-translate-y-0.5">
+        <ng-icon
+          name="bootstrapBank2"
+          size="22"
+          class="text-white"
+        />
+      </div>
 
-    <!-- Texte -->
-    <div class="flex flex-col">
+      <!-- Texte -->
+      <div class="flex flex-col">
         <a class="text-2xl font-extrabold
-                 bg-linear-to-r from-[#1fbf61] to-pink-700
+                 bg-linear-to-r from-[#1c9e50] to-[#b332c7]
                  bg-clip-text text-transparent"
                  routerLink="/">
-        Bancofiori
+          Bancofiori
         </a>
-      <p class="text-[12px] text-gray-400 tracking-wide">
-        Gestion bancaire
-      </p>
+        <p class="text-[12px] text-gray-400 tracking-wide">
+          Gestion bancaire
+        </p>
+      </div>
     </div>
 
-  </div>
-
-  <!-- Les boutons de navigation -->
-   <nav class="text-white flex flex-col gap-4 justify-between">
-    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
-        routerLink="/"
-        routerLinkActive="text-green-400 font-bold bg-green-800/40"
-        [routerLinkActiveOptions]="{ exact : true }"
-        >
+    <!-- Les boutons de navigation -->
+    <nav class="text-white flex flex-col gap-4 justify-between space-y-1">
+      <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
+         routerLink="/"
+         routerLinkActive="text-green-400 font-bold bg-green-800/40"
+         [routerLinkActiveOptions]="{ exact : true }">
         <ng-icon name="bootstrapHouse" size="22"/>
         Tableau de bord
-    </a>
-    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
-        routerLinkActive="text-green-400 font-bold bg-green-900/40"
-        [routerLinkActiveOptions]="{ exact : true }"
-        routerLink="/clients">
+      </a>
+
+      <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
+         routerLink="/clients"
+         routerLinkActive="text-green-400 font-bold bg-green-900/40"
+         [routerLinkActiveOptions]="{ exact : true }">
         <ng-icon name="matGroups2Sharp" size="22"/>
         Clients
-    </a>
-    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2" 
-        routerLink="/account"
-        routerLinkActive="text-green-400 font-bold bg-green-800/40"
-        [routerLinkActiveOptions]="{ exact : true }"
-        >
+      </a>
+
+      <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2" 
+         routerLink="/account"
+         routerLinkActive="text-green-400 font-bold bg-green-800/40"
+         [routerLinkActiveOptions]="{ exact : true }">
         <ng-icon name="matAccountBalanceWalletRound" size="22"/>
         Comptes
-    </a>
-    <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
-        routerLink="/operations"
-        routerLinkActive="text-green-400 font-bold bg-green-800/40"
-        [routerLinkActiveOptions]="{ exact : true }"
-        >
+      </a>
+
+      <a class="text-lg hover:bg-green-800/30 py-2 px-3 transition-all duration-200 pl-5 rounded-2xl flex items-center gap-2"
+         routerLink="/operations"
+         routerLinkActive="text-green-400 font-bold bg-green-800/40"
+         [routerLinkActiveOptions]="{ exact : true }">
         <ng-icon name="bootstrapArrowLeftRight" size="22"/>
         Opérations
-    </a>
-   </nav>
+      </a>
+    </nav>
+
+    <!-- Partie pour le compte utilisateur -->
+    <div class="flex gap-2 w-full mt-auto border-t border-gray-200 dark:border-gray-700 pt-6">
+      <div class="mx-auto w-full gap-4 border p-6 border-gray-200 dark:border-gray-700 rounded-3xl flex bg-gray-950/30">
+        
+        <!-- Code pour l'icone -->
+        <div class="w-12 h-12 rounded-[50%] text-white bg-linear-to-br from-[#1c9e50] to-[#b332c7] flex items-center justify-center">
+          <ng-icon name="bootstrapPerson" 
+          size="25"
+          />
+        </div>
+
+        <!-- Code pour la description -->
+         <div>
+          <h1 class="text-xl">Admin</h1>
+          <p class="text-gray-400 text-[10px]">Gestionnaire</p>
+         </div>
+      </div>
+    </div>
 </div>
